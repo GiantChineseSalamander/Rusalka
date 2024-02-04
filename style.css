@@ -1,0 +1,54 @@
+body {
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* prevents scrolling */
+  }
+  
+  #centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    max-height: calc(100vh - 40px); 
+    overflow: auto; 
+  }
+
+  
+  #viewport {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .item {
+    height: 50px;
+    width: 50px;
+  }
+  
+  #map {
+    position: absolute;
+  }
+
+  #girl {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+  }
+
+  .item {
+    position: absolute;
+    display: none;
+  }
+  
+  p {
+    color: black;
+  }
+  
